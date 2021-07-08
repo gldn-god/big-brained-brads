@@ -1,7 +1,7 @@
 # Big Brained Brads
 
 <!-- README -->
-  <h3 align="center">NHL Hockey ETL</h3>
+  <h3 align="center">Brain Weight ETL & Web App</h3>
   <p align="center"> 
   Say ‘What’ Again! I Dare You! I Double-Dare You, Motherf*****, Say ‘What’ One More Goddamn Time!
     <br />
@@ -72,12 +72,11 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-* [Boyd](https://github.com/Boyder3113/)
-* [Leanne](https://github.com/thompsle154/)
+* [Ce'Aren](https://github.com/)
+* [Enich](https://github.com/)
+* [Katie](https://github.com/)
+* [Steven](https://github.com/)
 * [Tommy](https://github.com/gldn-god/)
-* [Travis](https://github.com/Travbz/)
-* [Will](https://github.com/willserene/)
 
 
-
-Project Link: [Zamboni Zealots](https://github.com/willserene/big-brained-brads)
+Project Link: [Big Brained Brads](https://github.com/willserene/big-brained-brads)
