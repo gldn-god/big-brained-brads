@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request, flash
 from flask_sqlalchemy import SQLAlchemy
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine, func
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/DATABASE_NAME'
@@ -33,8 +37,8 @@ def add():
         weight = request.form['weight']  
         size = request.form['size']  
     
-        entry = Brain(age, gender, weight, size)                      
-        db.session.add()
+        entry = Brain(age=age, gender=gender, weight=weight, size=size)                      
+        db.session.add(entry)
         db.session.commit()
         return render_template('add.html')
     else:
