@@ -498,7 +498,7 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">New Brain Data</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -516,10 +516,33 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
+                                    <div class="">
+                                        <form action="/add" method="post">
+                                            <div class="mb-3">
+                                                <select class="form-select" aria-label="Default select example" name="age">
+                                                    <option selected>Select Age</option>
+                                                    <option value="1">Less Than 18 Years Old</option>
+                                                    <option value="2">Greater Than 18 Years Old</option>
+                                                  </select>
+                                              </div>
+                                              <div class="mb-3 ">
+                                                <select class="form-select" aria-label="Default select example" name="gender">
+                                                    <option selected>Select Gender</option>
+                                                    <option value="1">Female</option>
+                                                    <option value="2">Male</option>
+                                                  </select>
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="weight">Weight (grams):</label><br>
+                                                <input type="" id="weight" name="weight">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="size">Size (cm^3):</label><br>
+                                                <input type="" id="size" name="size">
+                                              </div>
+                                        </form>
                                     </div>
-                                    <div class="mt-4 text-center small">
+                                    <!-- <div class="mt-4 text-center small">
                                         <span class="mr-2">
                                             <i class="fas fa-circle text-primary"></i> Direct
                                         </span>
@@ -529,7 +552,7 @@
                                         <span class="mr-2">
                                             <i class="fas fa-circle text-info"></i> Referral
                                         </span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
