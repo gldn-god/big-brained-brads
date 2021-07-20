@@ -5,17 +5,16 @@ app = Flask(__name__)
 
 @app.route('/',methods = ['POST', 'GET'])
 def addrec():
-   if request.method == 'POST':
-       try:
-           gender = request.form['gender']
-           age = request.form['age']
-           size = request.form['size']
-           weight = request.form['weight']
-
-           with sql.connect("brains.sqlite") as con:
-               cur = con.cursor()
-               cur.execute("INSERT INTO brain_weights (gender,age,size,weight)
-                VALUES (?,?,?,?)",(gender,age,size,weight) )
+    if request.method == 'POST':
+        try:
+            gender = request.form['gender']
+            age = request.form['age']
+            size = request.form['size']
+            weight = request.form['weight']
+            
+            with sql.connect("brains.sqlite") as con:
+                cur = con.cursor()
+                cur.execute("INSERT INTO brain_weights (gender,age,size,weight) VALUES (?,?,?,?)",(gender,age,size,weight) )
             
             con.commit()
         
@@ -26,8 +25,9 @@ def addrec():
             return render_template("index.html")
             con.close()
 
+
 if __name__ == '__main__':
-   app.run(debug = True)
+    app.run(debug = True)
 
 
 
