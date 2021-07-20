@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS brain_weights;
 
 CREATE TABLE brain_weights (
-	"gender" int,
-	"age" int,
+	"gender" varchar,
+	"age" varchar,
 	"size" int,
 	"weight" int
 )
