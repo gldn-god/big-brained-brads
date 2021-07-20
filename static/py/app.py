@@ -26,6 +26,14 @@ def addrec():
             return render_template("index.html")
             con.close()
 
+    con = sqlite3.connect('brains.sqlite"')
+    cur = con.cursor()
+    female = cur.execute("SELECT COUNT(gender) FROM brains_weights WHERE gender = 'female'")
+    male = cur.execute("SELECT COUNT(gender) FROM brains_weights WHERE gender = 'male'")
+    averageSize = cur.execute("SELECT AVG(size) FROM brains_weights")
+    averageWeight = cur.execute("SELECT AVG(weight) FROM brains_weights")
+    con.close()
+
 if __name__ == '__main__':
    app.run(debug = True)
 
