@@ -1,29 +1,5 @@
 select * from brain_weights
 
-alter table brain_weights
-    alter column gender type varchar,
-    alter column age type varchar;
-
-update
-	brain_weights
-set gender = 'male'
-where gender = '1';
-	
-update 
-    brain_weights
-set gender = 'female'
-where gender = '2';
-
-update 
-	brain_weights
-set age = 'child'
-where age = '2';
-
-update 
-    brain_weights
-set age = 'adult'
-where age = '1'
-
 select 
 	gender,
 	round(avg(size), 2)
