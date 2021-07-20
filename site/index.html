@@ -380,11 +380,14 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                                Females</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{%females%}</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                            <!-- <i class="fas fa-calendar fa-2x text-gray-300"></i> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+                                              </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -398,11 +401,14 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                                Males</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{%males%}</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                            <!-- <i class="fas fa-dollar-sign fa-2x text-gray-300"></i> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+                                              </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -415,23 +421,26 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Average Size
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{%averageSize%}</div>
                                                 </div>
-                                                <div class="col">
+                                                <!-- <div class="col">
                                                     <div class="progress progress-sm mr-2">
                                                         <div class="progress-bar bg-info" role="progressbar"
                                                             style="width: 50%" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                            <!-- <i class="fas fa-clipboard-list fa-2x text-gray-300"></i> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-rulers" viewBox="0 0 16 16">
+                                                <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1H1z"/>
+                                              </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -445,11 +454,15 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                                Average Weight</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{%averageWeight%}</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                            <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
+                                                <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
+                                                <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
+                                              </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -498,7 +511,7 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">New Brain Data</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -516,10 +529,33 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
+                                    <div class="">
+                                        <form action="/add" method="post">
+                                            <div class="mb-3">
+                                                <select class="form-select" aria-label="Default select example" name="age">
+                                                    <option selected>Select Age</option>
+                                                    <option value="1">Less Than 18 Years Old</option>
+                                                    <option value="2">Greater Than 18 Years Old</option>
+                                                  </select>
+                                              </div>
+                                              <div class="mb-3 ">
+                                                <select class="form-select" aria-label="Default select example" name="gender">
+                                                    <option selected>Select Gender</option>
+                                                    <option value="1">Female</option>
+                                                    <option value="2">Male</option>
+                                                  </select>
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="weight">Weight (grams):</label><br>
+                                                <input type="" id="weight" name="weight">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="size">Size (cm^3):</label><br>
+                                                <input type="" id="size" name="size">
+                                              </div>
+                                        </form>
                                     </div>
-                                    <div class="mt-4 text-center small">
+                                    <!-- <div class="mt-4 text-center small">
                                         <span class="mr-2">
                                             <i class="fas fa-circle text-primary"></i> Direct
                                         </span>
@@ -529,7 +565,7 @@
                                         <span class="mr-2">
                                             <i class="fas fa-circle text-info"></i> Referral
                                         </span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
