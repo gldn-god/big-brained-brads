@@ -298,28 +298,29 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="">
-                                        <form action="/add" method="post">
+                                        <form action="{{ url_for('addrec') }}" method="post">
                                             <div class="mb-3">
-                                                <select class="form-select" aria-label="Default select example" name="age">
-                                                    <option selected>Select Age</option>
-                                                    <option value="1">Less Than 18 Years Old</option>
-                                                    <option value="2">Greater Than 18 Years Old</option>
+                                                <select class="form-select" name="age" />
+                                                    <option value="1">child</option>
+                                                    <option value="2">adult</option>
                                                   </select>
                                               </div>
-                                              <div class="mb-3 ">
-                                                <select class="form-select" aria-label="Default select example" name="gender">
-                                                    <option selected>Select Gender</option>
-                                                    <option value="1">Female</option>
-                                                    <option value="2">Male</option>
+                                              <div class="mb-3">
+                                                <select class="form-select" name="gender">
+                                                    <option value="1">female</option>
+                                                    <option value="2">male</option>
                                                   </select>
                                               </div>
                                               <div class="mb-3">
                                                 <label for="weight">Weight (grams):</label><br>
-                                                <input type="" id="weight" name="weight">
+                                                <input type="text" name="weight">
                                               </div>
                                               <div class="mb-3">
                                                 <label for="size">Size (cm^3):</label><br>
-                                                <input type="" id="size" name="size">
+                                                <input type="text" name="size">
+                                              </div>
+                                              <div class="mb-3">
+                                                <input type = "submit" value = "submit" />
                                               </div>
                                         </form>
                                     </div>
