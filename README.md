@@ -5,9 +5,9 @@
   <p align="center"> 
   Say ‘What’ Again! I Dare You! I Double-Dare You, Motherf*****, Say ‘What’ One More Goddamn Time!
     <br />
-    <a href="https://github.com/willserene/big-brained-brads/issues">Report Bug</a>
+    <a href="https://github.com/gldn-god/big-brained-brads/issues">Report Bug</a>
     ·
-    <a href="https://github.com/willserene/big-brained-brads/issues">Request Feature</a>
+    <a href="https://github.com/gldn-god/big-brained-brads/issues">Request Feature</a>
   </p>
 </p>
 
@@ -32,30 +32,28 @@
 But really - how big is a brain?
 
 *  Connects to Kaggle via API token using Python.  It extracts-and-unzips all files from the data source, which includes 1 CSV.
-*  Using pandas, CSVs are loaded to dataframes then prepared/transformed for their final migration to a PostgreSQL database.
-*  PostgreSQL and pgAdmin were used as the database solution
-*  
-*  
+*  Using pandas, CSVs are loaded to dataframes then prepared/transformed for their final migration to a SQLite database.
+*  Website collects user submissions of data via POST form button  and writes values to SQLite db
+*  The page resets back to index and views update each time a submission is made
 
-# MAKE AN EDIT
 
 <!-- BUILT WITH -->
 ## Built With
 
 * Jupyter Notebook
-* React.js
 * Flask
 * Kaggle
 * MS Word
-* pgAdmin
-* PostreSQL
+* SQLite
+* Pandas
 * Python
+* SQLAlchemy
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/willserene/big-brained-brads/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/gldn_god/big-brained-brads/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
@@ -75,9 +73,9 @@ Contributions are what make the open source community such an amazing place to b
 
 * [Ce'Aren](https://github.com/Crobinson17)
 * [Enich](https://github.com/e-621/)
-* [Katie](https://github.com/)
-* [Steven](https://github.com/)
+* [Katie](https://github.com/KStrange89)
+* [Steven](https://github.com/SteveZych)
 * [Tommy](https://github.com/gldn-god/)
 
 
-Project Link: [Big Brained Brads](https://github.com/willserene/big-brained-brads)
+Project Link: [Big Brained Brads](https://github.com/gldn-god/big-brained-brads)
