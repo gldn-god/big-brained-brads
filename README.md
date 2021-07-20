@@ -74,7 +74,7 @@ Contributions are what make the open source community such an amazing place to b
 ## Contact
 
 * [Ce'Aren](https://github.com/)
-* [Enich](https://github.com/)
+* [Enich](https://github.com/e-621/)
 * [Katie](https://github.com/)
 * [Steven](https://github.com/)
 * [Tommy](https://github.com/gldn-god/)
