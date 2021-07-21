@@ -39,6 +39,17 @@ def home():
 
     return render_template('index.html', females=female, males=male, averageSize=size, averageWeight=weight)
 
+
+@app.route("/tables")  
+def tables():  
+    con = sql.connect("brains.sqlite")
+    con.row_factory = sql.Row
+    cur = con.cursor()
+    cur.execute("select * from brain_weights")
+    rows = cur.fetchall()
+    return render_template("tables.html", rows = rows)
+
+
 if __name__ == '__main__':
    app.run(debug = True)
 
