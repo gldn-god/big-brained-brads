@@ -31,10 +31,27 @@
 
 But really - how big is a brain?
 
-*  Connects to Kaggle via API token using Python.  It extracts-and-unzips all files from the data source, which includes 1 CSV.
-*  Using pandas, CSVs are loaded to dataframes then prepared/transformed for their final migration to a SQLite database.
-*  Website collects user submissions of data via POST form button  and writes values to SQLite db
-*  The page resets back to index and views update each time a submission is made
+###### Requirements
+
+1. Our visualization includes a Python Flask–powered API, HTML/CSS, JavaScript, and at
+least one database.
+- SQLite
+
+2. Our project falls into the track:
+- A dashboard page with multiple charts that update from the same data
+
+3. Your project should include at least one JS library that we did not cover.
+- We used Charts.js 
+
+4. Your project must be powered by a data set with at least 100 records.
+- Over 200 records available by default
+
+5. Your project must include some level of user-driven interaction (e.g., menus, dropdowns,
+textboxes).
+- User submission form to database
+
+6. Your final visualization should ideally include at least three views.
+- Final visualization has 1 view, but 4 cards with metrics
 
 
 <!-- BUILT WITH -->
