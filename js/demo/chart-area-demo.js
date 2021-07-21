@@ -30,13 +30,13 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 // Area Chart Example
 var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
-  type: 'line',
+  type: 'bar',
   data: {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [{
       label: "Earnings",
       lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
+      backgroundColor: "#1228b0",
       borderColor: "rgba(78, 115, 223, 1)",
       pointRadius: 3,
       pointBackgroundColor: "rgba(78, 115, 223, 1)",
