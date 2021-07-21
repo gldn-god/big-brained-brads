@@ -1,3 +1,38 @@
+################################# Code from Enich's tutor###################################################
+from flask import Flask, render_template, request
+import sqlite3 as sql
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine, func
+
+engine = create_engine("sqlite:///data/brains.sqlite")
+Base = automap_base()
+Base.prepare(engine, reflect=True)
+Brains=Base.classes.brains
+
+# print(Base.classes.keys())
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    session=Session(engine)
+    res = session.query(func.count(Brains.Gender)).group_by(Brains.Gender).all()
+    print('===========================')
+    print(res)
+    print('===========================')
+    data = {
+        'males': res[0][0],
+        'females': res[1][0],
+        'averageWeight': 'PLACEHOLDER',
+        'averageSize': 'PLACEHOLDER'
+    }
+    session.close()
+    return render_template('index.html', data=data)
+
+
+#########################################Original Flask Below############################################################
 from flask import Flask, render_template, request
 import sqlite3 as sql
 
@@ -23,6 +58,7 @@ def addrec():
 
         finally:
             return render_template("index.html")
+            ## This needs to be above return
             con.close()
 
 
