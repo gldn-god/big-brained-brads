@@ -1,30 +1,29 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import sqlite3 as sql
 
 app = Flask(__name__)
 
-# @app.route('/', methods = ['POST', 'GET'])
-@app.route('/')
+@app.route('/', methods = ['POST', 'GET'])
 def home():
-    # if request.method == 'POST':
-    #     try:
-    #         gender = request.form['gender']
-    #         age = request.form['age']
-    #         size = request.form['size']
-    #         weight = request.form['weight']
+    if request.method == 'POST':
+        try:
+            gender = request.form['gender']
+            age = request.form['age']
+            size = request.form['size']
+            weight = request.form['weight']
 
-    #         with sql.connect("brains.sqlite") as con:
-    #             cur = con.cursor()
-    #             cur.execute("INSERT INTO brain_weights (gender,age,size,weight) VALUES (?,?,?,?)",(gender,age,size,weight))
+            with sql.connect("brains.sqlite") as con:
+                cur = con.cursor()
+                cur.execute("INSERT INTO brain_weights (gender,age,size,weight) VALUES (?,?,?,?)",(gender,age,size,weight))
             
-    #         con.commit()
+            con.commit()
         
-    #     except:
-    #         con.rollback()
+        except:
+            con.rollback()
 
-    #     finally:
-    #         return render_template("index.html")
-    #         con.close()
+        finally:
+            return redirect("/")
+            con.close()
 
     con = sql.connect('brains.sqlite')
     cur = con.cursor()
